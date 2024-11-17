@@ -1,0 +1,20 @@
+<%-include("partials/header.ejs") %>
+<style>
+    body{
+        background-color: blanchedalmond;
+    }
+</style>
+
+<div class="error-container">
+    <div class="another-container">
+    <h2>404</h2>
+    <p>Article Not Found</p>
+    <p>Returning to Homepage...</p>
+    </div>
+</div>
+<script>
+    setTimeout(function(){
+        window.location.href = "/";
+    },3000);
+</script>
+<%-include("partials/footer.ejs") %>

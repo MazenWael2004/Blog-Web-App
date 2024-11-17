@@ -1,0 +1,17 @@
+<%-include("partials/header.ejs") %>
+<style>
+    body{
+        background-color: blanchedalmond;
+    }
+</style>
+    <div class="view-article-box">
+        <div class="view-article-title">
+            <%= article.title %>
+        </div>
+
+        <div class="view-article-content">
+            <%=article.content%>
+        </div>
+        
+    </div>
+<%-include("partials/footer.ejs") %>

@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+body,h1{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter Tight", sans-serif;
+}
+.container{
+    color:white;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+ display: flex;
+ justify-content: center;
+ padding: 15px;
+}
+
+.navbar a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all ease-out 0.5s;
+}
+
+.navbar a:hover{
+    color: hsl(0, 12%, 0%);
+
+}
+.title{
+    font-weight: 700;
+    font-size: 2.23rem;
+    padding-left: 30px;
+}
+
+.dot{
+    color: black;
+}
+
+.about-container{
+    background-image:
+    linear-gradient(to top left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+     url("/images/lol.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: rgb(62, 0, 128);
+    font-size: 3rem;
+    animation: SlideDown 1s ease-in-out  forwards;
+}
+
+.about-description{
+ padding: 30px;
+}
+.p1{
+    opacity: 0;
+    width: 800px;
+    line-height: 1.6;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #faf9f6;
+    animation: SlideDown 1s ease-in-out 1s  forwards;
+}
+
+.read-article-button{
+    opacity: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    font-family: "Inter Tight", sans-serif;
+    border: none;
+    transition: all ease-in-out 0.4s;
+    cursor: pointer;
+    animation: SlideDown 1s ease-in-out 1s  forwards;
+    display: inline-block;
+}
+
+.read-article-button:hover{
+    color: white;
+    background-color: #1877F2;
+}
+
+.articles-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    place-items: center;
+    grid-auto-columns: auto;
+    gap: 30px;
+    align-items: stretch;
+}
+
+
+
+.article{
+    background-color:antiquewhite;
+    width: 450px;
+    margin: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 600px;
+}
+.article-pic{
+    
+    background-size: cover;
+    height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+}
+
+.pic1{
+    background-image: url("/images/digital.jpg");
+}
+
+.pic2{
+    background-image: url("/images/computer-program-coding-screen.jpg");
+}
+.pic3{
+    background-image: url("/images/web.webp");  
+}
+.pic4{
+    background-image: url("/images/cyber.webp");
+}
+.pic5{
+    background-image: url("/images/tech.jpg");
+}
+.article-first-few-lines{
+    width: 200px;
+    
+}
+
+.article-info{
+    padding: 30px;
+}
+
+.article-tags{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #1877F2;
+    padding-bottom: 15px;
+}
+
+.article-title{
+    font-size: 2rem;
+    width: 100%;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.article-first-few-lines{
+    line-height: 1.6;
+    width: 100%;
+    color: grey;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+@media(width < 750px){
+.about-container{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+
+
+}
+
+h1{
+    font-size: 2.34rem;
+}
+
+.p1{ 
+ width: 500px;
+ line-height: 1.4;
+}
+}
+
+.b2{
+    margin-top: 40px;
+}
+
+.lol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.post-creation-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-top: 30px;
+    border: #1a599c 2px solid;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 500px;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.7),
+                -10px -10px -10px rgba(0, 0, 0, 0.1);
+}
+
+a{
+    text-decoration: none;
+}
+
+form input,form textarea{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Inter Tight", sans-serif;
+    
+}
+
+form textarea.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    resize: none; 
+}
+
+.submit-button{
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter Tight", sans-serif;
+    border-radius: 18px;
+    
+
+}
+
+.submit-button:hover{
+    background-color: #0056b3;
+}
+
+label{
+    padding: 7px;
+}
+
+.view-article-box {
+    padding: 40px;
+    max-width: 900px;
+    margin: 50px auto; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.653); 
+    border-radius: 12px; 
+    border: 1px solid #ddd; 
+}
+
+.view-article-title {
+    font-size: 3.5rem; 
+    font-style: italic;
+    text-decoration: underline;
+    color: #771a9c; /* Add a nice color for the title */
+    text-align: center; /* Center the title */
+    margin-bottom: 30px; /* Add space below the title */
+}
+
+.view-article-content {
+    font-size: 1.7rem; /* Adjust for better readability */
+    line-height: 1.6; /* Improve text spacing */
+    color: #333333ec; /* Darker color for content text */
+    text-align: justify; /* Make the text justify for cleaner alignment */
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-top: 30px;
+}
+
+@keyframes SlideDown {
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.aofd{
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    align-items: center;
+    height: 100px;
+    padding: 30px;
+
+}
+
+.pic0{
+    background-image: url("/images/productive.jpeg");
+}
+
+
+
+.error-container {
+    text-align: center;
+    background-color: #771a9c;
+    color: white;
+    padding: 50px;
+   
+}
+
+.another-container h2 {
+    font-size: 6rem;
+    margin: 0;
+    font-weight: bold;
+    color: #fff; /* White to contrast with the background */
+    letter-spacing: 7px; /* Space out the digits */
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+.another-container p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #ffcc00; /* Contrasting color for visibility */
+    letter-spacing: 1px;
+    opacity: 1;
+}

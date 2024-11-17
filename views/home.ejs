@@ -1,0 +1,67 @@
+<%-include("partials/header.ejs") %>
+<div class="about-container">
+    <div class="about-description">
+        <h1>Time to be more productive!</h1>
+        <p class="p1">This article explores key strategies to boost productivity, focusing on techniques like prioritizing tasks, time-blocking, and reducing distractions. It highlights the importance of setting clear goals and maintaining a healthy work-life balance to achieve long-term efficiency. By implementing these practical steps, readers can improve focus and make the most of their time each day.</p>
+        <a href="/view/<%= articles[0].id %>" class="read-article-button">Read More</a>
+    </div>
+</div>
+<div class="aofd"> Articles of the day</div>
+<div class="articles-container">
+    <% articles.forEach(function(article) { %>
+    <div class="article" id="<%=article.id%>">
+        <div class="article-pic pic<%= article.id %>">
+        </div>
+        <div class="article-info">
+        <div class="article-tags">
+            <%= article.tags %>
+        </div>
+
+        <div class="article-title">
+            <%= article.title %>
+        </div>
+
+        <div class="article-first-few-lines">
+            <%= article.content.substring(0, 150)+"....." %>
+        </div>
+        <a href="/view/<%= article.id %>" class="read-article-button">Read More</a>
+        </div>
+      </div>
+
+      <!-- <div class="article" id="2">
+        <div class="article-pic pic2">
+        </div>
+        <div class="article-info">
+        <div class="article-tags">
+            CSS
+        </div>
+
+        <div class="article-title">
+            How CSS Works
+        </div>
+
+        <div class="article-first-few-lines">
+            We explore the key concepts behind CSS, including how it selects and styles HTML elements to shape web pages. By understanding the cascade and controlling layout, you can create polished, visually appealing websites...
+        </div>
+        <button class="read-article-button b2">Read More</div>
+      </div>
+
+      <div class="article" id="3">
+        <div class="article-pic pic3">
+        </div>
+        <div class="article-info">
+        <div class="article-tags">
+            Web apps,Internet,Software Development
+        </div>
+
+        <div class="article-title">
+            Serverless Architecture: Simplifying Web Apps
+        </div>
+
+        <div class="article-first-few-lines">
+            Serverless architecture transforms how we build and deploy web applications, eliminating the need for server management. By leveraging cloud services, developers can focus on coding and scaling while reducing infrastructure overhead...
+        </div>
+        <button class="read-article-button">Read More</div> -->
+            <% }); %>
+</div>
+<%-include("partials/footer.ejs") %>
