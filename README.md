@@ -15,30 +15,30 @@ This application can view articles/posts in addition to creating or editing exis
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
+## Prerequisites
+ - Install node and nodemon.
 
 ## Installation
 
  ### Run Locally
 
-- Clone the project
-
-```bash
-  git clone https://github.com/MazenWael2004/Blog-Web-App
-```
-
-- Go to the project directory
-
-```bash
-  cd Blog Web App
-```
-
-- Install dependencies
+- Download Zip
+- Open the Project using VS Code(recommended)
+- Install required node modules
 
 ```bash
   npm i express body-parser
 ```
 
-- Start the server
+- Run the server
+
+```bash
+  nodemon index.js
+```
+
+
+
+- Enjoy!
 
 ```bash
   nodemon index.js
