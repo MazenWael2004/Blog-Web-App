@@ -35,7 +35,7 @@ app.listen(3000,()=>{
     console.log("Server running on port 3000");
 });
 
-app.get("https://mazenwael2004.github.io/Blog-Web-App/",(req,res)=>{
+app.get("/",(req,res)=>{
     res.render("home.ejs",{articles:articles});
 })
 
